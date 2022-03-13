@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud | Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!--==========================Login============================-->
+    <div class="Login py-5" id="Login">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 bg-white rounded-start">
+                    <a href="index.html" class="text-decoration-none d-block m-3"><i class="fas fa-long-arrow-alt-left"></i>BACK HOME</a>
+                    <div class="LoginForm  h-100 rounded-start">
+                        <div class="position-relative top-50 translate-middle-y px-5"> 
+                            <label for="loginEmailInput">Email Address</label>
+                            <input type="text" class="form-control mb-3" placeholder="Enter Your Email Address" id="loginEmailInput">
+                            <p class="text-danger d-none" id="loginEmailEmptyInput"><i class="fas fa-exclamation-circle pe-2"></i>Please Enter Your Email Address</p>
+                            <label for="loginPasswordInput">Password</label>
+                            <input type="password" class="form-control mb-3" placeholder="Enter Your Password" id="loginPasswordInput">
+                            <p class="text-danger d-none" id="loginPasswordEmptyInput"><i class="fas fa-exclamation-circle pe-2"></i>Please Enter Your Password</p>
+                            <p class="bg-danger text-center text-white py-3 px-4 d-none" id="aMessageOfFail">Make Sure You Enter a Correct Email and Password.</p>
+                            <a class="btn btn-primary" id="loginBtn">LOGIN</a>
+                            <p class="text-center mt-5 pb-5">If You Dont Have Account! <a href="signUp.html">Sign Up</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image position-relative">
+                        <img src="images/julian-o-hayon-Bs-zngH79Ds-unsplash.jpg" class="w-100">
+                        <div class="position-absolute bg-image top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+                           <div class="text-center text-white">
+                              <h2 class="fs-1 py-3">WELCOME</h2>
+                              <h2 class="fs-1">IN CRUD WEBSITE</h2>
+                           </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

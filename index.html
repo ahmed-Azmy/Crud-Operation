@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+     <!--====================Navbar=====================-->  
+    <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand fs-3 text-white">Ps</a>
+        <div class="" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white " href="Login.html" id="login-link">Login/Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white d-none" href="index.html" id="logOut">LogOut</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--=========================Home===============================-->
+    <div class="loading mt-5 position-relative" id="home">
+        <div class="layer d-flex justify-content-center align-items-center">
+          <div class="text-center">
+            <h1 class="text-white">Product Storage</h1>
+            <p class="text-white fs-3">A site for storing products in an orderly and more comfortable way to use</p>
+          </div>
+        </div>
+    </div>
+    <!--=========================main content============================-->  
+    <div class="mainContent">
+      <div class="container-fluid px-0 ">
+      <!--===============Header====================-->
+      <div class="d-flex justify-content-between align-items-center shadow bg-header-footer header-height px-4 py-4 text-white">
+          <div class="d-flex align-items-center">
+            <span class="pt-1">
+                <button class="btn btn-light mb-1 d-none" id="addBtn">ADD</button>
+            </span>
+            <span class="ps-2">           
+                <input type="search" class="form-control  w-100" placeholder="Search..." id="SearchInput">
+            </span> 
+          </div>
+          <div class="text-center ps-3 w-count">
+            <span>Count</span>
+            <span id="CountOfProducts"></span> 
+          </div>
+      </div>
+    <!--=========================Form===========================-->
+    <div class="inputs hideInput overflow-hidden position-relative d-none" id="inputs">
+      <div class="w-75 inputs-content">
+         <input type="text" class="form-control py-2 rounded-0 fs-5 mb-3" id="inputName" placeholder="Enter Product Name">
+         <p class="text-danger" id="WarningMessage"><i class="fas fa-exclamation-circle"></i>Start With Capital & Min 4 Character</p>
+         <input type="text" class="form-control py-2 rounded-0 fs-5 mb-3" id="inputCategory" placeholder="Enter Product Category">
+         <p class="text-danger" id="WarningMessage1"><i class="fas fa-exclamation-circle"></i>Start With Capital & Min 4 Character</p>
+         <input type="number" class="form-control py-2 rounded-0 fs-5 mb-3" id="inputPrice" placeholder="Enter Product Price">         
+         <p class="text-danger" id="WarningMessage2"><i class="fas fa-exclamation-circle"></i>Enter The Price</p>
+         <textarea class="form-control py-2 rounded-0 fs-5 mb-3" id="inputDescription" cols="30" rows="2" placeholder="Enter Product Description..."></textarea>
+         <p class="text-danger" id="WarningMessage3"><i class="fas fa-exclamation-circle"></i>Start With Capital & Min 4 Character</p>
+         <button class="btn btn-primary btn-lg" id="addProductBtn">add product</button>
+         <button class="btn btn-primary btn-lg" id="clearForm">Clear</button>
+      </div>
+    </div>
+<!--==============================Table============================-->
+    <div class="h-mine overflow-auto">
+       <table class="table table-striped table-hover text-center m-0 table-mine text-black">
+          <thead>
+            <tr>
+              <th>ProductName</th>                      
+              <th>Category</th>
+              <th>Price</th>
+              <th>Date</th>
+              <th class="d-none" id="actionId">Action</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyContent">
+    
+          </tbody>
+       </table>
+    </div>
+<!--==============================footer============================-->
+    <div class="footer d-flex justify-content-between bg-header-footer shadow py-4 px-4 text-white">
+      <p class="m-0">&copy;Azmy Inc</p>
+      <p class="m-0">Crud operation </p>
+    </div>
+   </div>
+  </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud | Sign Up</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!--==========================Sign Up============================-->
+    <div class="signup py-5" id="signup">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="image position-relative">
+                        <img src="images/malvestida-magazine-u79wy47kvVs-unsplash.jpg" class="w-100">
+                        <div class="position-absolute bg-image top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+                            <div class="text-center text-white">
+                               <h2 class="fs-1 py-3">WELCOME</h2>
+                               <h2 class="fs-1">IN CRUD WEBSITE</h2>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="signUpForm bg-white h-100 rounded-end py-4">
+                        <div class="position-relative top-50 translate-middle-y px-5"> 
+                            <label for="signUpNameInput">Name</label>
+                            <input type="text" class="form-control mb-3 py-2" placeholder="Enter Your Name" id="signUpNameInput">
+                            <p class="text-danger d-none" id="signUpNameWarningMessage"><i class="fas fa-exclamation-circle pe-2"></i>Enter 3 Character Or Above And dont Make Any Space</p>
+                            <label for="signUpEmailInput">Email Address</label>
+                            <input type="text" class="form-control mb-3" placeholder="Enter Your Email Address" id="signUpEmailInput">
+                            <p class="text-danger d-none" id="signUpEmailWarningMessage"><i class="fas fa-exclamation-circle pe-2"></i>Enter Valid Email</p>
+                            <p class="text-danger d-none" id="signUpEmailIsAlreadySelected"><i class="fas fa-exclamation-circle pe-2"></i>This email has already been selected.</p>
+                            <label for="signUpPasswordInput">Password</label>
+                            <input type="password" class="form-control mb-3" placeholder="Enter Your Password" id="signUpPasswordInput">
+                            <p class="text-danger d-none" id="signUpPasswordWarningMessage"><i class="fas fa-exclamation-circle pe-2"></i>Enter 4 Digit Or Above</p>
+                            <p class="bg-success text-center text-white py-3 px-4 d-none" id="aMessageOfSuccess">You Can Login Now</p>
+                            <button class="btn btn-primary" id="signUpBtn">SIGN UP</button>
+                            <p class="text-center mt-5">If You Olready Have Account! <a href="Login.html">Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.loading{
+    height: 100vh ;
+    background-image: url(../images/background.png);
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.loading .layer{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.loading .layer h1{
+    font-size: 60px;
+    padding: 20px 10px;
+}
+.loading .layer p{
+    max-width: 550px;
+}
+.h-mine{
+    max-height: calc(100vh - 162px);
+    max-width: 100%;
+}
+.inputs{
+    height: 550px;
+    transition: all 1.2s ease-in-out;
+    background-color: #d5dadf;
+}
+.inputs-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hideInput{
+    height: 0px;
+}
+td{
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+}
+th{
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+}
+.w-mine{
+    min-width:100px;
+}
+.bg-header-footer{
+    background-color:#1d8ee5;
+}
+i{
+  cursor: pointer;
+}
+.header-height{
+    height: 90px;
+}
+.w-count{
+    width: 140px;
+}
+.table-mine{
+    background-color: #efefef;
+}
+.Login .image .bg-image{
+    border-radius: 8px;
+}
+.Login .image img{
+    height: 550px;
+    border-radius: 8px;
+}
+.signup .image .bg-image{
+    border-radius: 8px;
+}
+.signup .image img{
+    height: 550px;
+    border-radius: 8px;
+}
+.btn-check:focus + .btn-outline-info, .btn-outline-info:focus {
+    box-shadow: unset;
+}
+.btn-check:focus + .btn, .btn:focus {
+    outline: 0;
+    box-shadow: unset;
+}
+#WarningMessage{
+    display: none;
+}
+#WarningMessage1{
+    display: none;
+}
+#WarningMessage2{
+    display: none;
+}
+#WarningMessage3{
+    display: none;
+}
+
+#login-link , #logOut{
+    transition: all 1s;
+}
+#login-link:hover{
+    color: blue !important;
+}
+#logOut:hover{
+    color: blue !important;
+}
+.bg-image{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*===============Custom Scrollbar================*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+} 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
